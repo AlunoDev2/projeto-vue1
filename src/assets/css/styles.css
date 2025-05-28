@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+
+#app {
+  margin: 0;
+  background: #fff8f0;
+  font-family: 'Montserrat', sans-serif;
+  color: #3e2f25;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+
+section {
+  max-width: 900px;
+  width: 100%;
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px 30px;
+  box-shadow: 0 8px 20px rgba(177, 100, 75, 0.15);
+  margin-bottom: 30px;
+  transition: box-shadow 0.3s ease;
+}
+
+
+section:hover {
+  box-shadow: 0 10px 25px rgba(182, 62, 47, 0.3);
+}
+
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  color: #b63e2f;
+  font-weight: 700;
+  border-bottom: 3px solid #b63e2f;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+
+.dish-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+;
+
+
+footer {
+  font-size: 0.9rem;
+  color: #a87c6b;
+  margin-top: auto;
+  text-align: center;
+  padding: 15px 10px;
+  border-top: 1px solid #e1cfc5;
+  max-width: 900px;
+  width: 100%;
+}
+
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.6rem;
+  }
+}
